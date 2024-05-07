@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -47,23 +47,18 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           ),
-          SliverGrid(
-            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              mainAxisSpacing: 10,
-              crossAxisSpacing: 10,
-              childAspectRatio: 2,
-              
-            ),
-            delegate: SliverChildBuilderDelegate(
-              (BuildContext context, int index) {
-                return Container(
-                  alignment: Alignment.center,
-                  color: Colors.indigo[100 * (index % 9 + 1)],
-                  child: Text("Nota ${index + 1}"),
-                );
-              },
-              childCount: 30,
+          SliverMasonryGrid.count(
+            childCount: 30,
+            crossAxisCount: 2,
+            itemBuilder: (_, i) => Container(
+              margin: const EdgeInsets.all(8),
+              padding: const EdgeInsets.all(16),
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: Colors.indigo,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Text('$i'),
             ),
           ),
         ],
