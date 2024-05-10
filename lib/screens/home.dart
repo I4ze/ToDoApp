@@ -18,15 +18,33 @@ class HomeScreen extends StatelessWidget {
       ),
       Note(
         "Nota 2",
-        "orem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut odio vitae turpis mattis vulputate in eget metus. Morbi at nisl eu tellus gravida condimentum. Phasellus bibendum auctor nisi, et ullamcorper tellus volutpat sed. Duis ut sem pharetra, tempus nulla id, dignissim ex. In faucibus lorem in mi dictum eleme",
+        "orem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut odio vitae turpis mattis vulputate in eget metus. Morbi at nisl eu tellus gravida condimentum. Phasellus bibendum auctor nisi, et ullamcorper",
         DateTime.now(),
         cor: NoteCardColors.blueGreyCard,
       ),
       Note(
         "Nota 3",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut odio vitae turpis mattis vulputate in eget metus. Morbi at nisl eu tellus gravida condimentum. Phasellus bibendum auctor nisi, et ullamcorper tellus volutpat sed. Duis ut sem pharetra, tempus nulla id, dignissim ex. In faucibus lorem in mi dictum elementum. Aenean elementum ac enim at rhoncus. Nullam ut condimentum dui. Vivamus nec consectetur odio. Nam ac convallis velit. Etiam euismod magna nisl, at maximus tellus condimentum vel. Nulla fringilla nunc quis posuere suscipit. Vestibulum vel maximus justo, non elementum nibh. Proin lacinia nulla tellus, eu dignissim augue auctor at. Curabitur interdum felis risus, non tincidunt tellus rhoncus egestas. In at cursus nibh.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut odio vitae turpis mattis vulputate in eget metus. Morbi at nisl eu tellus gravida condimentum. Phasellus bibendum auctor nisi, et ullamcorper tellus volutpat sed. dignissim ex. In faucibus lorem in mi dictum elementum. Aenean elementum ac enim at rhoncus. Nullam ut condimentum dui. Vivamus nec consectetur odio. Nam ac convallis velit. Etiam euismod magna nisl, at maximus tellus condimentum vel. Nulla fringilla nunc quis posuere suscipit. Vestibulum vel maximus justo, non elementum nibh. Proin lacinia nulla tellus, eu dignissim augue auctor at. Curabitur interdum felis risus, non tincidunt tellus rhoncus egestas. In at cursus nibh.",
         DateTime.now(),
         cor: NoteCardColors.orangeCard,
+      ),
+      Note(
+        "Nota 4",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        DateTime.now(),
+        cor: NoteCardColors.pinkCard,
+      ),
+      Note(
+        "Nota 5",
+        "orem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut odio vitae turpis mattis vulputate in eget metus. Morbi at nisl eu tellus gravida condimentum. Phasellus bibendum auctor nisi, et ullamcorper",
+        DateTime.now(),
+        cor: NoteCardColors.redCard,
+      ),
+      Note(
+        "Nota 6",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut odio vitae turpis mattis vulputate in eget metus. Morbi at nisl eu tellus gravida condimentum. Phasellus bibendum auctor nisi, et ullamcorper tellus volutpat sed. Duis ut sem pharetra, tempus nulla id, dignissim ex. In faucibus lorem in mi dictum elementum. Aenean elementum ac enim at rhoncus. Nullam ut condimentum dui. Vivamus nec consectetur odio. Nam ac convallis velit. Etiam euismod magna nisl, at maximus tellus condimentum vel. Nulla fringilla nunc quis posuere suscipit. Vestibulum vel maximus justo, non elementum nibh. Proin lacinia nulla tellus, eu dignissim augue auctor at. Curabitur interdum felis risus, non tincidunt tellus rhoncus egestas. In at cursus nibh.",
+        DateTime.now(),
+        cor: NoteCardColors.blueCard,
       )
     ];
 

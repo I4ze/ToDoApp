@@ -14,11 +14,24 @@ Widget noteCard(Function()? onTap, Note note) {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(note.getTitulo()),
-          Text(note.getData().toString()),
-          Text(note.getCorpo()),
+          Text(
+            note.getTitulo(),
+            style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
+          ),
+          Text(
+            "${note.getData().day}/${note.getData().month}/${note.getData().year}",
+            style: const TextStyle(fontWeight: FontWeight.w600),
+          ),
+          Text(processTextToShow(note.getCorpo())),
         ],
       ),
     ),
   );
+}
+
+String processTextToShow(String body) {
+  if (body.length > 250) {
+    return "${body.substring(1, 250)}...";
+  }
+  return body;
 }
