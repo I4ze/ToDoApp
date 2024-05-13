@@ -8,6 +8,14 @@ Widget noteCard(Function()? onTap, Note note) {
       padding: const EdgeInsets.all(8.0),
       margin: const EdgeInsets.all(8.0),
       decoration: BoxDecoration(
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.shade500,
+            offset: const Offset(0.1, 0.1),
+            blurRadius: 6,
+            spreadRadius: 1.0,
+          )
+        ],
         color: note.getColor(),
         borderRadius: BorderRadius.circular(8.0),
       ),
