@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:to_do_app/Style/noteCardColors.dart';
 import 'package:to_do_app/Widgets/note_card.dart';
+import 'package:to_do_app/Widgets/account_options.dart';
 import 'package:to_do_app/models/note.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -61,27 +62,15 @@ class HomeScreen extends StatelessWidget {
             centerTitle: true,
             backgroundColor: Colors.indigo,
             leading: IconButton(
-              onPressed: () {
-                print("Menu pressionado");
-              },
               icon: const Icon(
-                Icons.menu,
+                Icons.account_circle_outlined,
                 color: Colors.white,
                 size: 45,
               ),
+              onPressed: () {
+                print("aaaaaaaaaaaaaaa");
+              },
             ),
-            actions: <Widget>[
-              IconButton(
-                icon: const Icon(
-                  Icons.account_circle_outlined,
-                  color: Colors.white,
-                  size: 45,
-                ),
-                onPressed: () {
-                  print("Conta Pressionado");
-                },
-              ),
-            ],
             shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(15),
