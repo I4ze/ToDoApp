@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:to_do_app/Style/noteCardColors.dart';
 import 'package:to_do_app/Widgets/note_card.dart';
-import 'package:to_do_app/Widgets/account_options.dart';
 import 'package:to_do_app/models/note.dart';
 
 class HomeScreen extends StatelessWidget {

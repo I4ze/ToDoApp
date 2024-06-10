@@ -13,7 +13,5 @@ void showAccOptions(BuildContext context) {
         child: Text(item),
       );
     }).toList(),
-    // Lidar com a opção selecionada
-    onSelected: (String selectedItem) {},
   );
 }
